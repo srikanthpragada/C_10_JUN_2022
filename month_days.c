@@ -2,15 +2,21 @@
 
 void main()
 {
-  int month, days;
+  int month, year, days;
 
      printf("Enter month :");
      scanf("%d",&month);
 
      switch(month)
      {
-        case 2 : days = 28;
-                 break;
+        case 2 :
+                printf("Enter year :");
+                scanf("%d",&year);
+                if(year % 4 == 0)
+                     days = 29;
+                else
+                     days = 28;
+                break;
         case 4 :
         case 6 :
         case 9 :
