@@ -14,7 +14,8 @@ void main()
            if(num == 0)
               break;
 
-           total += num;
+           if(num > 0)
+              total += num;
        }
 
        printf("Total = %d", total);

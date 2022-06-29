@@ -1,4 +1,4 @@
-// Take 5 numbers or until 0 is given and then display total
+// Take 5 numbers and display total
 #include <stdio.h>
 
 void main()
@@ -8,12 +8,8 @@ void main()
 
        for(i = 1; i <=  5; i ++)
        {
-           printf("Enter number [0 to stop]: ");
+           printf("Enter number :");
            scanf("%d",&num);
-
-           if(num == 0)
-              break;
-
            total += num;
        }
 
