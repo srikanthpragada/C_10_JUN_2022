@@ -1,12 +1,13 @@
 
 #include <stdio.h>
+#define FILENAME "names.txt"
 
 void main()
 {
    FILE * fp;
    int ch;
 
-     fp = fopen("names.txt", "rt");  // create a file in text mode
+     fp = fopen(FILENAME, "rt");  // create a file in text mode
      if(fp == NULL)
      {
          printf("Sorry! Could not open file!");
